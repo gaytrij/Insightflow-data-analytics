@@ -20,7 +20,31 @@
 InsightFlow is a Python-based data analytics platform built with Streamlit. It combines data preprocessing, exploratory data analysis (EDA), visualization, and machine learning in an interactive application.
 
 Upload a CSV dataset to inspect data quality, clean the data, explore statistical patterns, run selected machine-learning tasks, and review automatically generated insights and recommendations.
+## System Architecture
 
+InsightFlow follows a modular data analytics architecture that separates data ingestion, preprocessing, analytics, machine learning, and insight generation.
+
+### Data Processing Workflow
+
+1. **Data Ingestion:** Users upload CSV datasets through the Streamlit interface.
+2. **Data Cleaning:** The platform identifies missing values and duplicate records and applies appropriate cleaning operations.
+3. **Exploratory Data Analysis:** Generates summary statistics, KPIs, correlation analysis, and visualizations.
+4. **Machine Learning:** Supports classification, regression, clustering, and anomaly detection workflows.
+5. **Insight Generation:** Produces automated insights and data-driven recommendations.
+6. **Visualization:** Presents analytical results through an interactive Streamlit dashboard.
+
+### Modular Design
+
+| Module | Responsibility |
+|---|---|
+| `data_loader.py` | Dataset loading |
+| `data_cleaner.py` | Data quality assessment and cleaning |
+| `analytics.py` | KPIs, statistics, and correlations |
+| `visualization.py` | Data visualization |
+| `ml_models.py` | Machine learning models |
+| `insights.py` | Automated data insights |
+| `recommendations.py` | Actionable recommendations |
+| `logger.py` | Application logging |
 ## Application Preview
 
 ### Dashboard
