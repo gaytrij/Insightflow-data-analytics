@@ -43,3 +43,6 @@ output/
 *.egg-info/
 dist/
 build/
+
+# Local backups
+app_backup.py

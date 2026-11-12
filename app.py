@@ -289,7 +289,14 @@ if uploaded_file is not None:
             insight
         )
 
+    # ========================================================
+    # EXPLORATORY DATA ANALYSIS (EDA)
+    # ========================================================
 
+    st.header(
+        "🔎 Exploratory Data Analysis (EDA)"
+    )
+    
     # ========================================================
     # SUMMARY STATISTICS
     # ========================================================
@@ -297,7 +304,7 @@ if uploaded_file is not None:
     st.subheader(
         "📊 Summary Statistics"
     )
-
+    
     summary = generate_summary_statistics(
         cleaned_df
     )
@@ -446,7 +453,8 @@ if uploaded_file is not None:
         )
 
         st.pyplot(
-            fig
+            fig,
+            use_container_width=False
         )
 
         plt.close(fig)
@@ -462,8 +470,8 @@ if uploaded_file is not None:
     # DATA VISUALIZATION
     # ========================================================
 
-    st.header(
-        "📊 Data Visualization"
+    st.subheader(
+        "📊 Distributions & Relationships"
     )
 
     numerical_columns = cleaned_df.select_dtypes(
@@ -496,7 +504,8 @@ if uploaded_file is not None:
         )
 
         st.pyplot(
-            fig
+            fig,
+            use_container_width=False
         )
 
         plt.close(fig)
@@ -520,7 +529,8 @@ if uploaded_file is not None:
         )
 
         st.pyplot(
-            fig
+            fig,
+            use_container_width=False
         )
 
         plt.close(fig)
@@ -557,7 +567,8 @@ if uploaded_file is not None:
         )
 
         st.pyplot(
-            fig
+            fig,
+            use_container_width=False
         )
 
         plt.close(fig)
@@ -778,8 +789,9 @@ if uploaded_file is not None:
                             plt.tight_layout()
 
                             st.pyplot(
-                                fig
-                            )
+            fig,
+            use_container_width=False
+        )
 
                             plt.close(fig)
 
@@ -828,8 +840,9 @@ if uploaded_file is not None:
                         )
 
                         st.pyplot(
-                            fig
-                        )
+            fig,
+            use_container_width=False
+        )
 
                         plt.close(fig)
 
@@ -967,8 +980,9 @@ if uploaded_file is not None:
                         plt.tight_layout()
 
                         st.pyplot(
-                            fig
-                        )
+            fig,
+            use_container_width=False
+        )
 
                         plt.close(fig)
 
@@ -1057,8 +1071,9 @@ if uploaded_file is not None:
                         plt.tight_layout()
 
                         st.pyplot(
-                            fig
-                        )
+            fig,
+            use_container_width=False
+        )
 
                         plt.close(fig)
 
@@ -1285,8 +1300,9 @@ if uploaded_file is not None:
                     plt.tight_layout()
 
                     st.pyplot(
-                        fig
-                    )
+            fig,
+            use_container_width=False
+        )
 
                     plt.close(fig)
 
